@@ -24,15 +24,15 @@ namespace SDO_QuestionParser
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            /*app.UseRouting();
+            app.UseRouting();
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
-            });   */
-
+            });   
+                
 
             if (env.IsDevelopment())
             {
@@ -52,7 +52,7 @@ namespace SDO_QuestionParser
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();
-            });    
+            });                     
         }
     }
 }
